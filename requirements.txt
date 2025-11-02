@@ -1,0 +1,27 @@
+# Core dependencies for dataset generation
+openai>=1.0.0          # OpenAI SDK (for OpenRouter & GPT-4o)
+anthropic>=0.18.0      # Anthropic SDK (direct Claude API, optional)
+requests>=2.31.0       # HTTP requests
+python-dotenv>=1.0.0   # Environment variable management
+
+# Async & Concurrency
+asyncio>=3.4.3         # Async I/O
+aiohttp>=3.9.0         # Async HTTP client
+
+# Progress & Logging
+tqdm>=4.66.0           # Progress bars
+colorama>=0.4.6        # Colored terminal output
+
+# Data Processing
+pandas>=2.1.0          # Data manipulation (optional, for analysis)
+jsonlines>=4.0.0       # JSONL file handling
+
+# Validation
+jsonschema>=4.20.0     # JSON validation
+
+# Testing (optional)
+pytest>=7.4.0          # Testing framework
+pytest-asyncio>=0.21.0 # Async testing
+
+# HuggingFace (optional, for formula validation)
+huggingface-hub>=0.20.0  # HF API client
