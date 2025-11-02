@@ -4,13 +4,13 @@
 
 ## 📊 Overview
 
-This repository contains **all production scripts** used to generate **95,000+ training examples** for fine-tuning Qwen3-4B models for the ALL1E educational platform.
+This repository contains **all production scripts** used to generate **220,000+ training examples** for fine-tuning Qwen3-4B models for the ALL1E educational platform.
 
-**Total Dataset**: 95,086 examples across 8 versions (v2.0 → v2.7 + formulas)
+**Total Dataset**: 223,261 examples across 40+ distinct datasets (8 major versions) (v2.0 → v2.7 + formulas)
 
 **Performance**:
-- Generation cost: **~$255 USD** (Claude Haiku 4.5 API)
-- Time: **~48 hours** (with parallel processing)
+- Generation cost: **~$600 USD** (Claude Haiku 4.5 API)
+- Time: **~120 hours (distributed)** (with parallel processing)
 - Success rate: **99.2%** (valid JSON responses)
 - Quality: **Production-ready** (validated with 88.11% token accuracy)
 
@@ -88,6 +88,14 @@ qwen3-dataset-generation/
 │   └── scripts/
 │
 ├── v2.7_humanities_softskills/         # Humanities & Soft Skills
+├──
+├── preprocessing/                 # PDF chunk extraction & cleaning
+│   ├── README.md
+│   └── scripts/
+│       ├── extract_and_clean_secrets.py
+│       ├── extract_formula_chunks.py
+│       └── extract_books_final.py
+│
 │   ├── README.md                       # 12K examples (IN PROGRESS)
 │   └── scripts/
 │
